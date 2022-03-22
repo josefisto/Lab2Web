@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Dasar</title>
+    <link rel = "icon" href ="logo.png" type = "image/x-icon">
+    <!-- menyisipkan css eksternal -->   
+    <link rel="stylesheet" href="style_eksternal.css" type="text/css">
+    <style>       
+        body{
+            font-family: "Open Sans",sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #000000;
+        }
+		header {
+			min-height: 80px;
+			border-bottom:1px solid #852c2c;
+		}
+        h1 {
+        font-size: 24px;
+        color: #7a6340;
+        text-align: center;
+        padding: 20px 10px;
+        }
+        p b {
+            color:#829752;
+        }
+        p i {
+            color:#4a5697;
+        }
+    </style>
+</head>
+<body>
+    <!-- CSS ID Selector -->
+    <div id="intro">
+        <div class="chain">
+            <header>
+                <h1>CSS Eksternal</h1>
+            </header>
+            <p style="text-align: center; color: #bac1c7; line-height: 30px;
+            margin-bottom: 40px; font-size: 22px;">
+                 Kami sedang belajar HTML dan CSS dasar, pada mata kuliah <b>Pemrograman Web</b> di <i>Universitas Pelita Bangsa</i>. Pelajaran pertama yang kami dapat adalah membuat tampilan web sederhana dalam rangka mengenal tag-tag dasar HTML dan CSS.
+            </p>
+            <nav>
+                <a href="lab2_css_dasar.html">CSS Dasar</a>
+                <a href="lab2_css_eksternal.html">CSS Eksternal</a>
+                <a href="Lab1Web/Lab1_tag_dasar.html">HTML Dasar</a>
+             </nav>
+             <!-- CSS Class Selector -->
+             <a class="button btn-primary" href="#intro">Informasi selengkapnya</a>
+        </div>
+    </div>
+</body>
+</html>

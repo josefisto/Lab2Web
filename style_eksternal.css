@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    color:#fff;
+    padding: 10px;
+    }
+    nav a {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    padding:10px 20px;
+    }
+    nav .active,
+    nav a:hover {
+    background: #9ac919c9;
+    }
+
+/* ID Selector */
+#intro{
+    background: url(pic/OSBI-Lofi-Remix.gif) no-repeat left;
+    background-size: 55%;
+    background-color: #000000;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+/* Class Selector */
+.chain{
+    width: 55%;
+    float: right;
+    background-color: #6d6967b2;
+    padding: 150px;
+}
+
+.chain h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    color:#fff;
+    padding: 15px 20px;
+    background: #bebcbd;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: #795a5e; 
+}
+
+@media screen and (max-width:1200px){
+    .chain{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    #intro{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .chain{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    #intro{
+        padding: 0;
+    }
+    .chain{
+        padding: 60px;
+    }
+}
