@@ -60,7 +60,7 @@ Pertama buat file dokumen HTML dan save as dengan format nama ``lab2_css_dasar.h
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Dasar</title>
-	<link rel = "icon" href ="pic/logo.png" type = "image/x-icon">
+	<link rel = "icon" href ="logo.png" type = "image/x-icon">
 </head>
 <body>
     <!-- CSS ID Selector -->
@@ -89,14 +89,14 @@ Pertama buat file dokumen HTML dan save as dengan format nama ``lab2_css_dasar.h
 Selanjutnya Run untuk tampilkan output 
 
 <p align="center">
-	<img src="SS/output_doc_html.png" alt="UPB">
+	<img src="SS/output_doc_html.png" alt="SS - doc_html">
 </p>
 
 ## 2. Mengdeklarasikan 3 Jenis CSS
 
 Setelahnya sematkan CSS, terdapat 3 jenis CSS digunakan dalam website sampai saat ini, yaitu CSS Internal, inline, dan Eksternal.
 
-### ● Penerapan CSS Internal dalam Web
+### ● Penerapan CSS Internal
 Pertama mengdeklarasikan css internal dalam dokumen html, berikut merupakan koding css internal yang akan disematkan dalam kerangka head
 
 ```html
@@ -112,7 +112,18 @@ Selanjutnya sematkan koding css pada kerangka head sebagai contoh berikut
 <head>
     <title>CSS Dasar</title>   
     <style>       
-        h1 {
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #000000;
+        }
+		header {
+			min-height: 80px;
+			border-bottom:1px solid #852c2c;
+		}
+		h1 {
         font-size: 24px;
         color: #7a6340;
         text-align: center;
@@ -127,32 +138,17 @@ Selanjutnya sematkan koding css pada kerangka head sebagai contoh berikut
         p i {
             color:#4a5697;
         }
-
-		header {
-			min-height: 80px;
-			border-bottom:1px solid #852c2c;
-		}
-
-        body{
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #000000;
-        }
     </style>
 </head>
 ```
 Lakukan refresh pada halaman web sebelumnya untuk perubahan pada tampilan web
 
 <p align="center">
-	<img src="SS/output_css_internal.png" alt="UPB">
+	<img src="SS/output_css_internal.png" alt="SS - CSS Internal">
 </p>
 
-Pada pernyataan tag css internal di atas dapat di jelaskan :
-
 #### ⏵ Style Selektor Tag h1 (header 1)
-Pada ``<style>`` tag ``<h1>`` untuk mendeklarasikan elemen style h1 atau desain pada elemen header 1 di dalam kerangka ``<body>...</body>``
+Pada tag ``<style>`` tag ``<h1>`` untuk menyematkan  style css di dalam kerangka tag ``<body>...</body>`` tertuju kepada tag ``<h1>``.
 
 ```html  
     <style>       
@@ -171,16 +167,14 @@ Pada ``<style>`` tag ``<h1>`` untuk mendeklarasikan elemen style h1 atau desain 
                 <h1>CSS Internal dan <i>Inline CSS</i></h1>
 	</body>
 ```
-Pernyataan di atas dapat di nyatakan :
-
-Elemen Header 1 di sematkan dengan desain properti css yaitu, fungsi :
+Berikut merupakan properti CSS pada tag ``<h1>`` :
 - ``font-size``, mengatur ukuran besar kecilnya font tersebut,
 - ``color``, mengubah warna dari tulisan,
 - ``text-align``, mengatur posisi teks, dan
 - ``padding``, mengatur jarak elemen HTML dari dalam.
 
 #### ⏵ Style Selektor Tag p (paragraf)
-Pada ``<style>`` tag ``<p>`` untuk mendeklarasikan elemen style atau desain pada elemen paragraf di dalam kerangka ``<body>...</body>``
+Pada tag ``<style>`` tag ``<p>`` untuk menyematkan  style css di dalam kerangka tag ``<body>...</body>`` tertuju kepada tag ``<p>``, ``<b>``, dan ``<i>``.
 
 ```html  
     <style>       
@@ -194,16 +188,16 @@ Pada ``<style>`` tag ``<p>`` untuk mendeklarasikan elemen style atau desain pada
     </style>
 	....
 	<body>
-                <h1>CSS Internal dan <i>Inline CSS</i></h1>
+			<p>
+                Kami sedang belajar HTML dan CSS dasar, pada mata kuliah <b>Pemrograman Web</b> di <i>Universitas Pelita Bangsa</i>. Pelajaran pertama yang kami dapat adalah membuat tampilan web sederhana dalam rangka mengenal tag-tag dasar HTML dan CSS.
+			</p>
 	</body>			
 ```
-Pernyataan di atas dapat di nyatakan :
-
-Elemen ``<p>`` bold ``<b>`` dan italic ``<i>`` di sematkan dengan desain properti css yaitu, fungsi :
+Berikut merupakan properti CSS pada tag paragraf ``<p>``, bold ``<b>``, dan italic ``<i>`` :
 - ``color``, mengubah warna dari tulisan.
 
-#### ⏵ Style Selektor Tag header
-Pada ``<style>`` tag ``<header>...</header>`` untuk mendeklarasikan elemen style atau desain pada elemen header di dalam kerangka ``<body>...</body>``
+#### ⏵ Style Selector Tag header
+Pada tag ``<style>`` tag ``<header>...</header>`` untuk menyematkan  style css di dalam kerangka tag ``<body>...</body>`` tertuju kepada tag ``<header>``.
 
 ```html
 	<style>       
@@ -219,14 +213,12 @@ Pada ``<style>`` tag ``<header>...</header>`` untuk mendeklarasikan elemen style
             </header>
 	</body>
 ```
-Pernyataan di atas dapat di nyatakan :
-
-Elemen ``<header>`` di sematkan dengan desain properti css yaitu, fungsi :
+Berikut merupakan properti CSS pada tag ``<header>`` :
 - ``<min-height>``, mengatur minimal tinggi dari sebuah obyek, dan
 - ``<border-bottom>``, membuat style garis pinggir bagian bawah.
 
-#### ⏵ Style Selektor Tag body
-Pada ``<style>`` tag ``<body>...</body>`` untuk mendeklarasikan elemen style pada kerangka ``<body>...</body>``
+#### ⏵ Style Selector Tag body
+Pada tag ``<style>`` tag ``<body>...</body>`` untuk menyematkan style css di semua elemen pada kerangka ``<body>...</body>``
 
 ```html
 	<style>       
@@ -245,11 +237,80 @@ Pada ``<style>`` tag ``<body>...</body>`` untuk mendeklarasikan elemen style pad
 		...
 	</body>
 ```
-Pernyataan di atas dapat di nyatakan :
-
-Elemen ``<body>`` di sematkan dengan desain properti css yaitu, fungsi :
+Berikut merupakan properti CSS pada tag ``<body>`` :
 - ``<min-height>``, mengatur minimal tinggi dari sebuah obyek, 
 - ``<display>``, mengatur tampilan pada elemen,
 - ``<align-items>``, menyalurkan item-item pada container flex yang diletakkan sepanjang garis tegak lurus pada sumbu utama (cross-axis),
 - ``<justify-content>``, mensejajarkan item-item diantara flexbox agar container dari flexbox tersebut bisa mendistribusikan ruang kosong yang tersisa ketika item flex dalam satu baris tersebut tidak flexsibel atau meskipun flexsibel tapi sudah mencapai batas ukuran maksimum, dan
-- ``<background-color>``, memberikan warna pada latar belakang suatu elemen .
+- ``<background-color>``, memberikan warna pada latar belakang suatu elemen.
+
+### ● Penerapan CSS Inline
+Kedua menerapkan CSS inline atau menyisipkan properti css pada elemen. Berikut adalah koding css inline di sisipkan pada elemen paragraf ``<p>``.
+
+```html
+			<p style="text-align: center; color: #bac1c7; line-height: 30px;
+						margin-bottom: 40px; font-size: 22px;">
+						....
+			</p>
+```
+Output :
+
+<p align="center">
+	<img src="SS/output_css_inline.png" alt="SS - CSS Inline">
+</p>
+
+Properti yang di sematkan pada tag paragraf ``<p>`` :
+- ``text-align``, mengatur posisi teks,
+- ``color``, mengubah warna dari tulisan,
+- ``line-height``, mengatur ketinggian kotak garis elemen,
+- ``margin-bottom``mengatur batas kertas sebelah bawah, dan
+- ``font-size``, mengatur ukuran besar kecilnya font tersebut.
+
+### ● Penerapan CSS Eksternal
+Ketiga memanggil file dengan format .css sebagai desain untuk html secara terpisah sehingga tampilan html tampak lebih sedikit rapih.
+
+Buat file dengan format .css lalu isi koding css setelahnya simpan dan contoh koding sebagai berikut
+
+```css
+nav {
+    color:#fff;
+    padding: 10px;
+    }
+    nav a {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    padding:10px 20px;
+    }
+    nav .active,
+    nav a:hover {
+    background: #9ac919c9;
+    }
+```
+Selanjutnya tambahkan tag ``<link>`` pada kerangka ``<head>`` untuk memanggil file .css yang telah dibuat sebelumnya
+
+```html
+<head>
+<!-- menyisipkan css eksternal -->   
+    <link rel="stylesheet" href="style_eksternal.css" type="text/css">
+</head>
+```
+Selanjutnya tampilkan output pada file html yang telah di sematkan tag ``<link>`` sebelumnya
+
+<p align="center">
+	<img src="SS/output_css_eksternal_nav.png" alt="SS - CSS Eksternal_nav">
+</p>
+
+Pada HTML tersebut memanggil file CSS untuk memberi style atau desain kepada tag ``<nav>``
+
+Berikut merupakan properti css di panggil dari file css :
+
+- ``color``, merubah warna pada tulisan,
+- ``padding``, untuk memberikan spasi atau ruang diantara konten dan border,
+- ``display``, untuk mengatur tampilnya suatu elemen,
+- ``justify-content``, mensejajarkan item-item diantara flexbox,
+- ``text-decoration``, untuk memberikan efek garis pada text,
+- ``.active``,  memberikan style ketika sebuah link telah terklik atau telah ada aksi pada element
+- ``:hover``, untuk membuat efek saat mouse mengenai suatu element HTML,
+- ``background``, untuk mengatur efek latar belakang pada suatu elemen.
