@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-	<img src="logo/../../Logo/logo.png" alt="UPB" width="350" height="400">
+	<img src="Logo/logo.png" alt="UPB" width="350" height="400">
 </p>
 
 <p align="center">
