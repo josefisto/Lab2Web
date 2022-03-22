@@ -2,13 +2,13 @@
 	PEMROGRAMAN WEB
 </p>
 <p align="center">
-	TUGAS PRATIKUM
+	TUGAS PRATIKUM 2
 </p>
 <p align="center">
 	Dosen Pengampu : Agung Nugroho, M.Kom
 </p>
 <p align="center"> 
-	<b>Tugas untuk memenuhi syarat penilain pada Pert-2</b>
+	<b>Tugas untuk memenuhi syarat penilain pada Pert-3</b>
 </p>
 
 <p align="center">
