@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Dasar</title>
+    <link rel = "icon" href ="pic/logo.png" type = "image/x-icon">   
+    <style>  
+        body{
+            font-family: "Open Sans",sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #000000;
+        }
+		header {
+			min-height: 80px;
+			border-bottom:1px solid #852c2c;
+		}     
+        h1 {
+        font-size: 24px;
+        color: #7a6340;
+        text-align: center;
+        padding: 20px 10px;
+        }
+        h1 i {
+        color:#966596;
+        }
+        p b {
+            color:#829752;
+        }
+        p i {
+            color:#4a5697;
+        }
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav {
+            color:#fff;
+            padding: 10px;
+            }
+            nav a {
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            text-decoration: none;
+            padding:10px 20px;
+            }
+            nav .active,
+            nav a:hover {
+            background: #9ac919c9;
+            }
+
+        /* ID Selector */
+        #intro{
+            background: url(pic/OSBI-Lofi-Remix.png) no-repeat left;
+            background-size: 55%;
+            background-color: #000000;
+            overflow: hidden;
+            padding: 100px 0;
+        }
+
+        .chain{
+            width: 55%;
+            float: right;
+            background-color: #6d6967b2;
+            padding: 150px;
+        }
+
+        .chain h1{
+            margin-bottom: 30px;
+            font-size: 30px;
+            font-weight: 900;
+        }
+        
+        /* Class Selector */
+        .button{
+            display: flex;
+            justify-content: center;
+            color:#fff;
+            padding: 15px 20px;
+            background: #bebcbd;
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background: #795a5e; 
+        }
+
+        @media screen and (max-width:1200px){
+            .chain{
+                padding: 80px;
+            }
+        }
+
+        @media screen and (max-width:1000px){
+            #intro{
+                background-size: 100%;
+                padding: 100px 40px;
+            }
+            .chain{
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width:600px){
+            #intro{
+                padding: 0;
+            }
+            .chain{
+                padding: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- CSS ID Selector -->
+    <div id="intro">
+        <div class="chain">
+            <header>
+                <h1>CSS Internal dan <i>Inline CSS</i></h1>
+            </header>
+                <h1>Hello World</h1>
+            <p style="text-align: center; color: #bac1c7; line-height: 30px;
+            margin-bottom: 40px; font-size: 22px;">
+                 Kami sedang belajar HTML dan CSS dasar, pada mata kuliah <b>Pemrograman Web</b> di <i>Universitas Pelita Bangsa</i>. Pelajaran pertama yang kami dapat adalah membuat tampilan web sederhana dalam rangka mengenal tag-tag dasar HTML dan CSS.
+            </p>
+            <nav>
+                <a href="lab2_css_dasar.html">CSS Dasar</a>
+                <a href="lab2_css_dasar_eksternal.html">CSS Eksternal</a>
+                <a href="Lab1Web/Lab1_tag_dasar.html">HTML Dasar</a>
+             </nav>
+             <!-- CSS Class Selector -->
+             <a class="button btn-primary" href="#intro">Informasi selengkapnya</a>
+        </div>
+    </div>
+</body>
+</html>
