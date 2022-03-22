@@ -174,10 +174,10 @@ Pada ``<style>`` tag ``<h1>`` untuk mendeklarasikan elemen style h1 atau desain 
 Pernyataan di atas dapat di nyatakan :
 
 Elemen Header 1 di sematkan dengan desain properti css yaitu, fungsi :
-- ``font-size`` (mengatur ukuran besar kecilnya font tersebut),
-- ``color`` (mengubah warna dari tulisan),
-- ``text-align``(mengatur posisi teks), dan
-- ``padding``(mengatur jarak elemen HTML dari dalam).
+- ``font-size``, mengatur ukuran besar kecilnya font tersebut,
+- ``color``, mengubah warna dari tulisan,
+- ``text-align``, mengatur posisi teks, dan
+- ``padding``, mengatur jarak elemen HTML dari dalam.
 
 #### ⏵ Style Selektor Tag p (paragraf)
 Pada ``<style>`` tag ``<p>`` untuk mendeklarasikan elemen style atau desain pada elemen paragraf di dalam kerangka ``<body>...</body>``
@@ -200,7 +200,7 @@ Pada ``<style>`` tag ``<p>`` untuk mendeklarasikan elemen style atau desain pada
 Pernyataan di atas dapat di nyatakan :
 
 Elemen ``<p>`` bold ``<b>`` dan italic ``<i>`` di sematkan dengan desain properti css yaitu, fungsi :
-- ``color`` (mengubah warna dari tulisan).
+- ``color``, mengubah warna dari tulisan.
 
 #### ⏵ Style Selektor Tag header
 Pada ``<style>`` tag ``<header>...</header>`` untuk mendeklarasikan elemen style atau desain pada elemen header di dalam kerangka ``<body>...</body>``
@@ -222,8 +222,8 @@ Pada ``<style>`` tag ``<header>...</header>`` untuk mendeklarasikan elemen style
 Pernyataan di atas dapat di nyatakan :
 
 Elemen ``<header>`` di sematkan dengan desain properti css yaitu, fungsi :
-- ``<min-height>``(mengatur minimal tinggi dari sebuah obyek), dan
-- ``<border-bottom>``(membuat style garis pinggir bagian bawah).
+- ``<min-height>``, mengatur minimal tinggi dari sebuah obyek, dan
+- ``<border-bottom>``, membuat style garis pinggir bagian bawah.
 
 #### ⏵ Style Selektor Tag body
 Pada ``<style>`` tag ``<body>...</body>`` untuk mendeklarasikan elemen style pada kerangka ``<body>...</body>``
@@ -249,7 +249,7 @@ Pernyataan di atas dapat di nyatakan :
 
 Elemen ``<body>`` di sematkan dengan desain properti css yaitu, fungsi :
 - ``<min-height>``, mengatur minimal tinggi dari sebuah obyek, 
-- ``<display>``mengatur tampilan pada elemen,
-- ``<align-items>``menyalurkan item-item pada container flex yang diletakkan sepanjang garis tegak lurus pada sumbu utama (cross-axis),
+- ``<display>``, mengatur tampilan pada elemen,
+- ``<align-items>``, menyalurkan item-item pada container flex yang diletakkan sepanjang garis tegak lurus pada sumbu utama (cross-axis),
 - ``<justify-content>``, mensejajarkan item-item diantara flexbox agar container dari flexbox tersebut bisa mendistribusikan ruang kosong yang tersisa ketika item flex dalam satu baris tersebut tidak flexsibel atau meskipun flexsibel tapi sudah mencapai batas ukuran maksimum, dan
 - ``<background-color>``, memberikan warna pada latar belakang suatu elemen .
