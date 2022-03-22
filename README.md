@@ -15,15 +15,13 @@
 	<img src="Logo/logo.png" alt="UPB" width="350" height="350">
 </p>
 
-<p align="center">
-                 Nama : Jose Fisto
-</p>
-<p align="center">
-                 NIM : 312010119
-</p>
-<p align="center">
+<pre>
+                 Nama  : Jose Fisto
+
+                 NIM   : 312010119
+
                  Kelas : TI.20 A.1
-</p>
+</pre>
 
 <br/>
 <br/>
